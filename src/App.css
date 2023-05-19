@@ -73,32 +73,46 @@ body {
 /* profile title */
 .profile-title {
   color: #ccf381;
+  
 }
 .title-one {
   position: fixed;
-  top: 5.6em;
-  font-size: 0.7em !important;
+  top: 8.7em;
+  font-size: 0.5em !important;
   transition: all ease-in-out 0.6s;
-  left: 7.2em;
+  left: 12em;
   letter-spacing: 0.3em;
 }
 .title-two {
   writing-mode: vertical-lr;
   text-orientation: upright;
   position: fixed;
-  top: 5.33em;
-  left: 12.7em;
+  top: 8.45em;
+  left: 17.5em;
   transition: all ease-in-out 0.6s;
   letter-spacing: -0.3em;
-  font-size: 0.7em !important;
+  font-size: 0.5em !important;
 }
+
 .profile-container:hover .title-one {
-  top: 7em;
-  left: 13em;
+  top: 9em;
+  left: 19em;
 }
-.profile-container:hover .title-two{
-  top: 8.3em;
-  left: 14em;
+.profile-container:hover  .title-two{
+  top: 10.2em;
+  left: 21.5em;
   writing-mode: horizontal-tb;
   letter-spacing: 0.3em;
+}
+
+.profile-info p{
+  color: #fff;
+  letter-spacing: 0.1em;
+  position: fixed;
+  top: 12.5em;
+  font-size: 22px;
+  left: 20.7em;
+  width: 15em;
+  height: 100%;
+  font-family: 'Caveat', cursive;
 }
