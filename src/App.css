@@ -6,6 +6,7 @@
 }
 body {
   background: #4801ff;
+  /* background: #040d2e; */
 }
 
 .navigation-wrapper {
@@ -116,7 +117,17 @@ body {
   font-family: "Caveat", cursive;
 }
 
-.transition{
+.transition {
   background-color: #ccf381;
   z-index: 9999 !important;
+}
+
+/* project page */
+.glass-drop{
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }

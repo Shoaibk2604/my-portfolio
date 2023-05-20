@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
+@layer components {
+  .btn-primary {
+    @apply py-1 px-2 bg-zinc-950 text-white  rounded-lg shadow-md hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-opacity-75;
+  }
+}

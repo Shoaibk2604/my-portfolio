@@ -1,6 +1,8 @@
 import React from "react";
 import Transition from "../../components/Transition";
-
+import ProjectCard from "../../components/ProjectCard";
+import { BiArrowBack } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const Project = () => {
   return (
     <>
@@ -10,13 +12,13 @@ const Project = () => {
           <h2 className="uppercase text-6xl grid place-content-center mt-12 text-indigo-200">
             Personal projects
           </h2>
+          <div className="absolute top-16 text-4xl text-indigo-200">
+            <Link to="/">
+              <BiArrowBack />
+            </Link>
+          </div>
         </div>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-12 place-content-around my-8 place-items-center">
-<div className="border-2  h-60">01</div>
-<div className="border-2  h-60">02</div>
-<div className="border-2  h-60">03</div>
-<div className="border-2  h-60">04</div>
-        </div>
+        <ProjectCard />
       </div>
     </>
   );
