@@ -1,10 +1,10 @@
-import './App.css';
-import Home from './pages/Home';
+import "./App.css";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+        <AnimatedRoutes />
     </div>
   );
 }

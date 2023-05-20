@@ -34,7 +34,7 @@ body {
 
 /* Profile Card */
 .profile-container {
-  width: 14em;
+  width: 23em;
   height: 14em;
   position: fixed;
   top: 15em;
@@ -73,7 +73,6 @@ body {
 /* profile title */
 .profile-title {
   color: #ccf381;
-  
 }
 .title-one {
   position: fixed;
@@ -98,14 +97,14 @@ body {
   top: 9em;
   left: 19em;
 }
-.profile-container:hover  .title-two{
+.profile-container:hover .title-two {
   top: 10.2em;
   left: 21.5em;
   writing-mode: horizontal-tb;
   letter-spacing: 0.3em;
 }
 
-.profile-info p{
+.profile-info p {
   color: #fff;
   letter-spacing: 0.1em;
   position: fixed;
@@ -114,5 +113,10 @@ body {
   left: 20.7em;
   width: 15em;
   height: 100%;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
+}
+
+.transition{
+  background-color: #ccf381;
+  z-index: 9999 !important;
 }
