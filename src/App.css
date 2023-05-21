@@ -131,3 +131,6 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.background-circle{
+  background:repeating-radial-gradient(rgb(0,0,0,0.4) 2px, #4801ff 5px, #4801ff 100px);
+}

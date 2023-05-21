@@ -3,6 +3,7 @@ import Transition from "../../components/Transition";
 import ProjectCard from "../../components/ProjectCard";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { projectData } from "../../api/api";
 const Project = () => {
   return (
     <>
@@ -18,7 +19,13 @@ const Project = () => {
             </Link>
           </div>
         </div>
-        <ProjectCard />
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-8 place-content-around my-8 place-items-center"  >
+        {projectData.map((data) => {
+          return (
+              <ProjectCard title={data.title} img={data.picture} detail={data.detail} gitlink={data.gitlink} livelink={data.livelink} key={data.id}/>
+              );
+            })}
+            </div>
       </div>
     </>
   );
