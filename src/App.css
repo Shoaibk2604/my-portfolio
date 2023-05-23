@@ -3,22 +3,32 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
+  scrollbar-width: none;
 }
 body {
   background: #4801ff;
   /* background: #040d2e; */
 }
-
-.navigation-wrapper {
-  transform: perspective(80em) rotateY(-30deg);
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
+.navigation-tilt {
+  transition: all ease-in-out 0.3s;
+  transform: perspective(30em) rotateY(-40deg) skew(-13deg, -7deg);
+}
+.navigation-tilt:hover,
+.navigation-tilt-2:hover {
+  transform: rotateY(-5deg) skew(0deg, 0deg);
+}
+.navigation-tilt-2 {
+  transition: all ease-in-out 0.3s;
+  transform: perspective(30em) rotateY(-40deg);
 }
 .nav-btns:hover {
-  transform: skew(-13deg, 4deg);
   -webkit-text-fill-color: transparent;
-  transition: all ease-in-out 0.3s;
-}
-.nav-btns:not(:hover) {
-  transition: all ease-in-out 0.3s;
 }
 
 .nav-btns {
@@ -35,25 +45,20 @@ body {
 
 /* Profile Card */
 .profile-container {
-  width: 23em;
+  width: 17em;
   height: 14em;
-  position: fixed;
-  top: 15em;
-  left: 12em;
   overflow: hidden;
 }
 .profile-box {
   border: 1px solid rgba(255, 255, 255, 0.509);
   width: 14em;
   height: 14em;
-  position: fixed;
-  top: 15em;
+  position: absolute;
   transition: all ease-in-out 0.4s;
-  left: 12em;
   border-radius: 10px;
 }
 .profile-container:hover .profile-box {
-  top: 19em;
+  top: 4.3em;
   transform: perspective(70em) rotateX(75deg);
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -76,7 +81,7 @@ body {
   color: #ccf381;
 }
 .title-one {
-  position: fixed;
+  position: absolute;
   top: 8.7em;
   font-size: 0.5em !important;
   transition: all ease-in-out 0.6s;
@@ -86,7 +91,7 @@ body {
 .title-two {
   writing-mode: vertical-lr;
   text-orientation: upright;
-  position: fixed;
+  position: absolute;
   top: 8.45em;
   left: 17.5em;
   transition: all ease-in-out 0.6s;
@@ -94,11 +99,11 @@ body {
   font-size: 0.5em !important;
 }
 
-.profile-container:hover .title-one {
+.profile-wrapper:hover .title-one {
   top: 9em;
   left: 19em;
 }
-.profile-container:hover .title-two {
+.profile-wrapper:hover .title-two {
   top: 10.2em;
   left: 21.5em;
   writing-mode: horizontal-tb;
@@ -108,12 +113,11 @@ body {
 .profile-info p {
   color: #fff;
   letter-spacing: 0.1em;
-  position: fixed;
+  position: absolute;
   top: 12.5em;
   font-size: 22px;
   left: 20.7em;
   width: 15em;
-  height: 100%;
   font-family: "Caveat", cursive;
 }
 
@@ -123,7 +127,7 @@ body {
 }
 
 /* project page */
-.glass-drop{
+.glass-drop {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
@@ -131,6 +135,90 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.background-circle{
-  background:repeating-radial-gradient(rgb(0,0,0,0.4) 2px, #4801ff 5px, #4801ff 100px);
+.background-circle {
+  background: repeating-radial-gradient(
+    rgb(0, 0, 0, 0.4) 2px,
+    #4801ff 5px,
+    #4801ff 100px
+  );
+}
+.position-social-icon {
+  position: absolute;
+  top: 16em;
+  left: 11%;
+}
+
+@media (max-width: 1270px) {
+  .nav-btns {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 640px) {
+  .position-social-icon {
+    position: absolute;
+    top: 9em;
+    left: 5%;
+  }
+  .nav-btns {
+    font-size: 1.5em;
+    font-weight: 300;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1em;
+  }
+
+  .title-one {
+    top: 16em;
+    left: 1em;
+  }
+  .title-two {
+    top: 17.1em;
+    left: 5.1em;
+    writing-mode: horizontal-tb;
+    letter-spacing: 0.3em;
+  }
+  .profile-info p {
+    top: 20em;
+    text-align: center;
+    left: 0em;
+    width: 100%;
+  }
+
+  .profile-wrapper:hover .title-one {
+    top: 16em;
+    left: 1em;
+  }
+  .profile-wrapper:hover .title-two {
+    top: 17.1em;
+    left: 5.1em;
+  }
+  .profile-container:hover .profile-box {
+    top: 0em;
+    transform: perspective(0em) rotateX(0deg);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .profile-container:hover .profile-img {
+    transform: translate(0, 0%);
+  }
+  .profile-container {
+    width: 14em;
+  }
+  .profile-container:hover {
+    overflow: hidden;
+  }
+  .navigation-wrapper {
+    display: flex;
+    top: 2em;
+    flex-direction: row-reverse;
+  }
+  .navigation-tilt,
+  .navigation-tilt-2 {
+    transform: rotateY(0deg) skew(0deg, 0deg);
+  }
 }

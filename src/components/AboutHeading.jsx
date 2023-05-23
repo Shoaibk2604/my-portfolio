@@ -3,11 +3,11 @@ import React from "react";
 
 const AboutHeading = () => {
   return (
-    <div className="m-5">
+    <div className=" mt-16 sm:m-5">
       <div className="mt-2">
         <Phrase
           margin={8}
-          size={70}
+          size={55}
           cubicBezier={[0.68, 0.04, 0.45, 0.98]}
           color="#ccf381"
           font="basic-medium"
@@ -25,11 +25,11 @@ const AboutHeading = () => {
       <div className="mt-2">
         <Phrase
           margin={8}
-          size={70}
+          size={50}
           cubicBezier={[0.68, 0.04, 0.45, 0.98]}
           color="#ffffff"
           font="basic-medium"
-          delay={1.5}
+          delay={1.3}
         >
           <Char char="F" />
           <Char char="U" />
@@ -41,11 +41,11 @@ const AboutHeading = () => {
       <div className="mt-2">
         <Phrase
           margin={8}
-          size={70}
+          size={48}
           cubicBezier={[0.68, 0.04, 0.45, 0.98]}
           color="#ffffff"
           font="basic-medium"
-          delay={2}
+          delay={1.6}
         >
           <Char char="P" />
           <Char char="U" />
