@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <div className=" navigation-container ">
-      <div className="absolute   left-5 sm:left-1/2 top-14 navigation-wrapper uppercase ">
+      <div className="absolute   left-20 sm:left-1/2 top-14 navigation-wrapper uppercase ">
         <div className="navigation-tilt">
           <Link to={"/about"}>
             <div className="nav-btns ml-8">About</div>

@@ -1,3 +1,8 @@
+:root{
+  --bg-color:hsl(252.86deg 75.68% 14.51%);
+  --primary:hsl(344.52deg 100% 48.63%);
+  --secondary:#5D001E;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +10,19 @@
   font-family: "Oswald", sans-serif;
   scrollbar-width: none;
 }
+
 body {
-  background: #4801ff;
-  /* background: #040d2e; */
+  background:var(--bg-color);
+  
 }
 html {
   scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
   width: 0px;
+}
+.transition-color{
+  background-color: var(--primary);
 }
 .navigation-tilt {
   transition: all ease-in-out 0.3s;
@@ -35,9 +44,9 @@ body::-webkit-scrollbar {
   font-size: 7em;
   font-weight: 700;
   background-clip: text;
-  color: #000;
+  color: var(--primary);
   letter-spacing: 7px;
-  -webkit-text-fill-color: #000;
+  -webkit-text-fill-color: var(--primary);
   -webkit-text-stroke-width: 2px;
   line-height: 1.1em;
   cursor: pointer;
@@ -78,7 +87,7 @@ body::-webkit-scrollbar {
 }
 /* profile title */
 .profile-title {
-  color: #ccf381;
+  color: var(--primary)
 }
 .title-one {
   position: absolute;
@@ -122,7 +131,7 @@ body::-webkit-scrollbar {
 }
 
 .transition {
-  background-color: #ccf381;
+  background-color: var(--primary);
   z-index: 9999 !important;
 }
 
@@ -137,9 +146,9 @@ body::-webkit-scrollbar {
 }
 .background-circle {
   background: repeating-radial-gradient(
-    rgb(0, 0, 0, 0.4) 2px,
-    #4801ff 5px,
-    #4801ff 100px
+    rgba(255, 255, 255, 0.906) 1px,
+    var(--bg-color) 5px,
+    var(--bg-color) 100px
   );
 }
 .position-social-icon {
@@ -158,7 +167,7 @@ body::-webkit-scrollbar {
   .position-social-icon {
     position: absolute;
     top: 9em;
-    left: 5%;
+    left: 11%;
   }
   .nav-btns {
     font-size: 1.5em;
