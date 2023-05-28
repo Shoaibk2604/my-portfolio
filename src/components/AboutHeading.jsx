@@ -11,7 +11,7 @@ const AboutHeading = () => {
           cubicBezier={[0.68, 0.04, 0.45, 0.98]}
           color="#ccf381"
           font="basic-medium"
-          delay={1}
+          delay={0.8}
         >
           <Char char="P" />
           <Char char="A" />
@@ -29,7 +29,7 @@ const AboutHeading = () => {
           cubicBezier={[0.68, 0.04, 0.45, 0.98]}
           color="#ffffff"
           font="basic-medium"
-          delay={1.3}
+          delay={1.1}
         >
           <Char char="F" />
           <Char char="U" />
@@ -45,7 +45,7 @@ const AboutHeading = () => {
           cubicBezier={[0.68, 0.04, 0.45, 0.98]}
           color="#ffffff"
           font="basic-medium"
-          delay={1.6}
+          delay={1.4}
         >
           <Char char="P" />
           <Char char="U" />
