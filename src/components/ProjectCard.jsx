@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
         </div>
         <div className="text-indigo-100">
           <h4 className="text-2xl tracking-wide text-yellow-300">{title}</h4>
-          <p className="text-sm tracking-wider font-thin">{detail}</p>
+          <p className="text-sm tracking-wider font-thin truncate">{detail}</p>
           <div className="grid grid-cols-2 mt-2">
             <Link to={gitlink}>
               <button className="text-3xl w-1/12 text-gray-800">

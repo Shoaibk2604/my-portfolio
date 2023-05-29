@@ -9,7 +9,7 @@ export const projectData = [
   {
     id: "1",
     title: "PortFolio Web App",
-    detail: "mullatalai",
+    detail: "A portfolio web app built with Tailwind CSS and React.",
     picture: portfolio,
     gitlink: "https://github.com/Shoaibk2604/my-portfolio",
     livelink: "https://shoaib-portfolio-main.netlify.app",
@@ -17,7 +17,7 @@ export const projectData = [
   {
     id: "2",
     title: "Task Management Web App",
-    detail: "mullatalai",
+    detail: "A task management system with dark and light mode using React.",
     picture: todo,
     gitlink: "https://github.com/Shoaibk2604/todo-app",
     livelink: "https://todo-list-responsive.netlify.app/",
@@ -25,7 +25,7 @@ export const projectData = [
   {
     id: "3",
     title: "Merchandise E-com Web App",
-    detail: "mullatalai",
+    detail: "A responsive anime merchandise UI built with React.",
     picture: anime,
     gitlink: "https://github.com/Shoaibk2604/anime-merchandise",
     livelink: "https://anime-merchandise.netlify.app",
@@ -33,7 +33,7 @@ export const projectData = [
   {
     id: "4",
     title: "Trading Web App Clone",
-    detail: "mullatalai",
+    detail: "Clone UI of a Trading App",
     picture: qodar,
     gitlink: "https://qodarr-live.netlify.app",
     livelink: "https://qodarr-live.netlify.app",
@@ -41,7 +41,7 @@ export const projectData = [
   {
     id: "5",
     title: "E-commerce Web App",
-    detail: "mullatalai",
+    detail: "A ReactJS app with integrated search, filter, and API functionality.",
     picture: zevi,
     gitlink: "https://github.com/Shoaibk2604/Zevi_Assesment",
     livelink: "https://zevi-search-app.netlify.app",
@@ -49,7 +49,7 @@ export const projectData = [
   {
     id: "6",
     title: "Canvas Api Mirroring",
-    detail: "mullatalai",
+    detail: "Canvas API JS on Mouse move",
     picture: canvas,
     gitlink: "dhttps://github.com/Shoaibk2604/JavaScript-Canvas-API",
     livelink: "https://canvas-mirroring-by-shoaib.netlify.app/",

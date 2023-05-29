@@ -15,6 +15,7 @@ body {
   background:var(--bg-color);
   
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -156,7 +157,23 @@ body::-webkit-scrollbar {
   top: 16em;
   left: 11%;
 }
-
+@media (min-width:768px){
+  .bg-design{
+    bottom: -5%;
+      left: -1%;
+    }
+    .bg-design-right{
+    top: -5%;
+      right: -1%;
+    }
+    .bg-design-1{
+      content: '';
+      border-radius: 50%;
+      background-color: var(--primary);
+      position: fixed;
+      z-index: -1;
+    }
+}
 @media (max-width: 1270px) {
   .nav-btns {
     font-size: 4em;
