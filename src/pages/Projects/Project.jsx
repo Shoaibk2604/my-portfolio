@@ -10,7 +10,7 @@ const Project = () => {
       <Transition />
       <div className="project-container mx-8">
         <div className="project-page-heading ">
-          <h2 className="uppercase text-4xl sm:text-6xl grid place-content-center mt-12 text-indigo-200">
+          <h2 className="uppercase text-4 xl sm:text-6xl grid place-content-center mt-12 text-indigo-200">
             Personal projects
           </h2>
           <div className="absolute top-2 sm:top-16 text-4xl text-indigo-200">

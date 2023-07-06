@@ -4,7 +4,7 @@ import anime from "../Assests/atsukoecommerce.png";
 import qodar from "../Assests/qodarclone.png";
 import zevi from "../Assests/filterecommerce.png";
 import canvas from "../Assests/Canvas.png";
-
+import tailwind from "../Assests/tailwind.png"
 export const projectData = [
   {
     id: "1",
@@ -24,11 +24,11 @@ export const projectData = [
   },
   {
     id: "3",
-    title: "Merchandise E-com Web App",
-    detail: "A responsive anime merchandise UI built with React.",
-    picture: anime,
-    gitlink: "https://github.com/Shoaibk2604/anime-merchandise",
-    livelink: "https://anime-merchandise.netlify.app",
+    title: "Tailwind Component Lib.",
+    detail: "Tailwind Component built with Tailwind Utility classes",
+    picture: tailwind,
+    gitlink: "https://github.com/Shoaibk2604/Tailwind_Lib",
+    livelink: "https://tailwind-component-lib.netlify.app",
   },
   {
     id: "4",
@@ -53,5 +53,13 @@ export const projectData = [
     picture: canvas,
     gitlink: "dhttps://github.com/Shoaibk2604/JavaScript-Canvas-API",
     livelink: "https://canvas-mirroring-by-shoaib.netlify.app/",
-  }
+  },
+  {
+    id: "7",
+    title: "Merchandise E-com Web App",
+    detail: "A responsive anime merchandise UI built with React.",
+    picture: anime,
+    gitlink: "https://github.com/Shoaibk2604/anime-merchandise",
+    livelink: "https://anime-merchandise.netlify.app",
+  },
 ];
